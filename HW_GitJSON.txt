@@ -2,20 +2,20 @@
 5. Клонировать репозиторий JSON на локальный компьютер.
 $ git clone https://github.com/Zezova/JSON.git
 ______________________________________
- 6. Внутри локального JSON создать файл “new.json”.
+6. Внутри локального JSON создать файл “new.json”.
 $ cd JSON/
 $ touch new.json
 ______________________________________
- 7. Добавить файл под гит.
+7. Добавить файл под гит.
 $ git add new.json
 ______________________________________
- 8. Закоммитить файл.
+8. Закоммитить файл.
 $ git commit -m "Git_JSON"
 [main c1b730f] Git_JSON
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 new.json
+1 file changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 new.json
 ______________________________________
- 9. Отправить файл на внешний GitHub репозиторий.
+9. Отправить файл на внешний GitHub репозиторий.
 $ git push
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
@@ -24,9 +24,9 @@ Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 306 bytes | 306.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Zezova/JSON.git
-   b79c20f..c1b730f  main -> main
+  b79c20f..c1b730f  main -> main
 _______________________________________
- 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
 $ vim new.json
 {
 "FullName": "Ivanov Ivan Ivanovich",
@@ -35,56 +35,56 @@ $ vim new.json
 "future desired salary": 15
 }
 _____________________________________
- 11. Отправить изменения на внешний репозиторий.
+11. Отправить изменения на внешний репозиторий.
 $ git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   new.json
+ (use "git add <file>..." to update what will be committed)
+ (use "git restore <file>..." to discard changes in working directory)
+       modified:   new.json
 $ git push
 Everything up-to-date
 ____________________________________
- 12. Создать файл preferences.json
+12. Создать файл preferences.json
 $ touch preferences.json
 ____________________________________
- 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
 $ vim preferences.json
 {
-	"Favourite movie": "Pirates of the Carribean",
-	"Favourite serial": "Friends",
-	"Favourite food": "pizza",
-	"Favourite season": "autumn",
-	"Country to be visited": "Canada"
+"Favourite movie": "Pirates of the Carribean",
+"Favourite serial": "Friends",
+"Favourite food": "pizza",
+"Favourite season": "autumn",
+"Country to be visited": "Canada"
 }
 __________________________________
- 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
 $ touch skills.json
 $ vim skills.json
 {
-	"skills": "magic"
+"skills": "magic"
 }
 __________________________________
- 15. Отправить сразу 2 файла на внешний репозиторий.
+15. Отправить сразу 2 файла на внешний репозиторий.
 $ git add preferences.json skills.json
 $ git commit -m "new files"
 $ git push
 __________________________________
- 16. На веб интерфейсе создать файл bug_report.json.
+16. На веб интерфейсе создать файл bug_report.json.
 GitHub Create new file bug_report.json
 __________________________________
- 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
 GitHub Commit new file
 __________________________________
- 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
 GitHub Edit file
 {
 "Bug number 1": "the site doesn't open in Google Chrome",
 "Bug number 2": "window download for 16 minutes"
 }
 __________________________________
- 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 20. Синхронизировать внешний и локальный репозиторий JSON
+19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+20. Синхронизировать внешний и локальный репозиторий JSON
 $ git pull
